@@ -1,0 +1,27 @@
+
+
+
+anchosrs  set the position, 
+id must be unique,
+root object - There can be only one
+
+Qt use parent-child hierarchy to manage resource allocation , so when parent is destroyed all child got destroyed
+load starting from root objet, then rest of object-tree ,when root destroyed ,all destroyed
+
+opacity : 0.5  // value: 0--to--1  0.5=50% determine how transparent it is
+
+
+xyz => Z is layering effect for overlapped images, who will be in top who in buttom
+
+parent = desk , child reside on top of it: parent   making parent z=1 and child z=0 does not bring parent on top of child
+
+child position 0,0 of its parent's postion, so child position relative to parent 0,0 postion 
+
+
+Like QObject is the base class for everything
+Item is base class for all qml elements type
+
+taphandler on tapping
+mouseArea used for more interactive than tap-handler, like it has feature drag and drop, many signals like onPostionChanged
+
+mouseArea invisible item , mouseArea need a parent to visualization, like child of Rectangle
